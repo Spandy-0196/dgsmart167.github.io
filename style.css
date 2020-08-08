@@ -1,0 +1,49 @@
+*{
+	font-family: Montserrat;
+}
+
+h2{
+	text-align: center;
+	color: maroon;
+	padding: 1px;
+}
+
+p{
+	padding: 1px;
+}
+
+h3{
+	background-color: blue;
+	color: yellow;
+	padding: 1px;
+}
+
+header{
+	background-color:blue;
+	padding:2px;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+    display: inline;
+    margin:30px;
+}
+
+li a{
+	color:white;
+	text-decoration: none;
+}
+
+li a:hover{
+	color:maroon;
+}
+
+footer{
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 3px;
+}

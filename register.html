@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body style="background-color:moccasin;margin-left:100px;margin-right:100px;"><br>
+    <h2 style="color:maroon;text-align:center;">Fill up the form and register yourself</h2>
+    <br><br><br>
+    <form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="vc1"><b>Full name</b></label>
+      <input type="text" class="form-control" id="vc1" value="Full Name" required>
+      <div class="invalid-feedback">
+        Please enter your own valid name!!!
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="vc2"><b>Full Address</b></label>
+      <input type="text" class="form-control" id="vc2" value="Full Address" required>
+      <div class="invalid-feedback">
+        Please enter a valid Address!!!
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6-mb-3">
+      <label for="Add"><b>Agency Code</b></label>
+      <input type="text" class="form-control" id="Add" value="Agency Code" required>
+    </div>
+    <div class="invalid-feedback">
+      Please provide proper Agency Code!!!
+    </div>
+  </div>
+  <div class="form-row">  
+    <div class="col-md-3 mb-3">
+      <label for="vc4"><b>State</b></label>
+      <select class="custom-select" id="vc4" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Andaman and Nicobar Islands</option>
+        <option>Andhra Pradesh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chandigarh</option>
+        <option>Chattisgarh</option>
+        <option>Dadra and Nagar Haveli</option>
+        <option>Daman and Diu</option>
+        <option>Delhi</option>
+        <option>Goa</option>
+        <option>Gujarat</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jammu and Kashmir</option>
+        <option>Jharkhand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Ladakh</option>
+        <option>Lakshadweep</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Meghalaya</option>
+        <option>Mizoram</option>
+        <option>Nagaland</option>
+        <option>Odisha</option>
+        <option>Puducherry</option>
+        <option>Punjab</option>
+        <option>Rajasthan</option>
+        <option>Sikkim</option>
+        <option>Tamil Nadu</option>
+        <option>Telangana</option>
+        <option>Tripura</option>
+        <option>Uttar Pradesh</option>
+        <option>Uttarakhand</option>
+        <option>West Bengal</option>
+
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state!!!
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="vc5"><b>Zip</b></label>
+      <input type="text" class="form-control" id="vc5" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip!!!
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-4-mb-3">
+      <label for="id"><b>User ID</b></label>
+      <input type="email" class="form-control" id="id" aria-describedby="emailHelp">
+    </div>
+    <div class="invalid-feedback">
+      Please provide a valid User ID!!!
+    </div>
+    <div class="col-md-4-mb-3">
+      <label for="pwd"><b>Password</b></label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+    <div class="invalid-feedback">
+      Please provide a valid Password!!!
+    </div>
+  </div>
+  <br><br>
+ <button class="btn btn-primary" type="register" style="margin-left:550px;">Register</button>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('register', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

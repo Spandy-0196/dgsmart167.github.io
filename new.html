@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+  </head>
+  <body style="background-color: moccasin;">
+<section>
+<form method="POST" action="#">
+  <h2>APPLICATION FORM FOR LIC AGENCY</h2>
+  <br><br>
+  <h3>Personal Details</h3><br>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputname"><b>Full Name</b></label>
+      <input type="name" class="form-control" name="applicant_name">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputEmail4"><b>Email Id</b></label>
+      <input type="email" class="form-control" name="applicant_email">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputmobile"><b>Mobile Number</b></label>
+      <input type="Mobile" class="form-control" name="applicant_mobile">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress"><b>Full Address</b></label>
+    <input type="text" class="form-control" name="applicant_address" >
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputCity"><b>City</b></label>
+      <input type="text" class="form-control" name="applicant_city">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState"><b>State</b></label>
+      <select name="applicant_state" class="form-control">
+        <option selected>Choose...</option>
+        <option>Andaman and Nicobar Islands</option>
+        <option>Andhra Pradesh</option>
+        <option>Arunachal Pradesh</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chandigarh</option>
+        <option>Chattisgarh</option>
+        <option>Dadra and Nagar Haveli</option>
+        <option>Daman and Diu</option>
+        <option>Delhi</option>
+        <option>Goa</option>
+        <option>Gujarat</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jammu and Kashmir</option>
+        <option>Jharkhand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Ladakh</option>
+        <option>Lakshadweep</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Meghalaya</option>
+        <option>Mizoram</option>
+        <option>Nagaland</option>
+        <option>Odisha</option>
+        <option>Puducherry</option>
+        <option>Punjab</option>
+        <option>Rajasthan</option>
+        <option>Sikkim</option>
+        <option>Tamil Nadu</option>
+        <option>Telangana</option>
+        <option>Tripura</option>
+        <option>Uttar Pradesh</option>
+        <option>Uttarakhand</option>
+        <option>West Bengal</option>
+      </select>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputZip"><b>Zip Code</b></label>
+      <input type="Zip" class="form-control" name="applicant_zipcode">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputdateofbirth"><b>Date of Birth</b></label>
+      <input type="Date" class="form-control" name="applicant_dob">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputeducationalqualification"><b>Educational Qualification</b></label>
+      <select name="applicant_education" class="form-control">
+        <option selected>Choose...</option>
+        <option>Class 10</option>
+        <option>Class 12</option>
+        <option>Graduate</option>
+        <option>Post Graduate</option>
+      </select>
+    </div>
+  </div>
+   <h3>Documents Uploading</h3>
+  <div class="card-group">
+    <div class="card">
+      <div class="form-action">
+         <form action="database.php" method="POST" enctype="multipart/form-data" style="width:20%;"><h4 style="margin-top: 20px;">OWN Photograph:</h4><br>
+            <input type="file" name="ownphoto" style="margin-left: 40px;"><br><br>
+         </form>
+      </div>
+    </div>
+    <div class="card">
+      <div class="form-action">
+         <form action="database.php" method="POST" enctype="multipart/form-data"><h4>PAN CARD Photograph:</h4><br>
+            <input type="file" name="pancard" style="margin-left: 40px;"><br><br>
+         </form>
+      </div>
+    </div>
+    <div class="card">
+      <div class="form-action">
+         <form action="database.php" method="POST" enctype="multipart/form-data"><h4>AADHAR CARD Photograph:</h4><br>
+            <input type="file" name="aadharcard" style="margin-left: 40px;"><br><br>
+         </form>
+      </div>
+    </div>
+  </div>
+  <h3 style="margin-left: 20px; margin-right: 20px;">Frequently Asked Questions</h3>
+  <div class="card-group" style="margin-left: 20px; margin-right: 20px;">
+    <div class="card">
+      <div class="form-wrapper">
+        <label for="yes_no_radio" style="margin-left: 50px; margin-right: 50px;"><b>Do you have an IRDA License of your own?</b>
+        </label><br>
+          <input type="radio" name="yes_no1" style="margin-left: 150px; margin-right: 10px;"><b>Yes</b></input><br>
+          <input type="radio" name="yes_no1" style="margin-left: 150px; margin-right: 10px;"><b>No</b></input> 
+      </div>
+    </div>
+    <div class="card">
+      <div class="form-wrapper">
+        <label for="yes_no_radio" style="margin-left: 50px; margin-right: 50px;"><b>Do you have any experience in Marketing/Sales Industry?</b></label><br>
+          <input type="radio" name="yes_no2" style="margin-left: 150px; margin-right: 10px;"><b>Yes</b></input><br>
+          <input type="radio" name="yes_no2" style="margin-left: 150px; margin-right: 10px;"><b>No</b></input>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <input type="submit" value="Submit" name="applicant_submit" style="margin-left: 615px; background-color: blue; color: yellow; font-style: bold; font-size: 20px;">
+  <br><br>
+</form>
+</section>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>  
+</html>
